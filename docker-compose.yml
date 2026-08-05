@@ -1,0 +1,9 @@
+services:
+    waf:
+        build:
+            context: ./waf
+        ports:
+            - "80:80"
+    app:
+        build:
+            context: ./app
